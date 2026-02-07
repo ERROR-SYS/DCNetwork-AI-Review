@@ -1,2 +1,56 @@
-# DCNetwork-AI-Review
-Regular suggestions to improve DCNetwork's AI.
+
+# DCNetwork AI Platform - Review | 7th February 2026
+_Please open an issue if you have any suggestions._
+- **Categories**:
+  - AI Improvements.
+  - UX Improvements.
+  - UI Improvements.
+  - Bug Fixes.
+
+___
+## UX Improvements:
+   **_1._** Remove the ‘Connected as…’ since the wallet is already shown on the top. <br>
+     _Suggestion: Replace it with a small resume of what was said in the chat._ <br><br>
+      <img width="558" height="276" alt="image" src="https://github.com/user-attachments/assets/a0910c54-0cf8-4a27-8de1-0539c6a5dcbd" />
+___
+   **_2._** Instead of showing the loading animation:<br><br>
+     <img width="615" height="119" alt="image" src="https://github.com/user-attachments/assets/73bbe507-2ac9-468b-816f-bbbef4e70029" /><br><br>
+     We can directly show the agent activity as well as a "Generating.." message <br><br>
+     <img width="615" height="100" alt="image" src="https://github.com/user-attachments/assets/19ce4b2b-0751-408e-9742-5a0bf0a74c84" />
+___
+   **_3._** Replace the “U” with the  wallet's profile picture: <br><br>
+     <img width="663" height="365" alt="image" src="https://github.com/user-attachments/assets/1c28e1d5-4a47-492d-bb1a-56388322e0f5" />
+___
+   **_4._** Replace “AI” with the model's icon: <br><br>
+     <img width="659" height="362" alt="image" src="https://github.com/user-attachments/assets/85bfe3a5-80a7-43c3-8590-cda899b1ad4d" />
+___
+   **_5._** Unify the website's language, the wallet's menu adapts to the user's region while the rest of the platform is in English.<br>
+     _Note: I think it's better to set the menu's language to English instead of translating the whole platform into different languages because adding them requires a new paging system and high quality translations for each of them._
+___
+## UI Improvements:
+   **_1._** Increase the height of this container so that the borders are aligned and remove the hover animation that makes the wallet button grow.<br><br>
+     <img width="900" height="392" alt="image" src="https://github.com/user-attachments/assets/b335dfed-c6a4-420e-8c75-5d38f145adcc" /><br><br>
+   It should look like this: <br><br>
+     <img width="894" height="337" alt="image" src="https://github.com/user-attachments/assets/93af893f-d000-41ff-be6c-a54a60e18d2d" /><br><br>
+   Styles used: <br>
+      `.flex .h-12.border-b { height: 3.55rem }` <br>
+      `.flex .text-card-foreground.rounded-lg { border: none }`
+___
+   **_2._** Then, move the toggle menu button to the bottom and add the logo in the top. <br><br>
+     <img width="897" height="1031" alt="image" src="https://github.com/user-attachments/assets/f135022a-60c0-4230-92c5-c50f32fd66c9" /><br><br>
+     Styles used to remove the border shown in the screenshot:<br>
+     `.absolute.cursor-col-resize { top: 3.55rem; }`<br>
+     `.h-screen.flex .relative.h-full { border: none }`<br>
+     `.h-screen.flex .relative.h-full .flex-1.overflow-hidden { border-right: 1px solid hsl(var(--border)) }`<br>
+     `.h-screen.flex .relative.h-full .p-2.justify-between { border-right: 1px solid hsl(var(--border)) }`<br>
+___
+   **_3._** Replace the “switch theme” button with “untoggle menu” button and remove the “Settings” text to replace it with the “switch theme” button. <br><br>
+     <img width="893" height="1032" alt="image" src="https://github.com/user-attachments/assets/f95f8627-688e-4f40-82d4-7aa4ebb151e8" />
+___
+## Bug Fixes:
+   **_1._** After reloading the page, the AI can be used without signing in.<br><br>
+     <img width="1408" height="1027" alt="image" src="https://github.com/user-attachments/assets/edbf8a28-097f-4558-9d65-2390d1d15a01" />
+___
+
+This review is based on the functions I tested, I will continue to test and will update I find anything.<br>
+_**Note:** I recommend adding IDs to the containers I mentioned and to apply the styles using them instead of the classes because they could affect other components, styles can also be directly applied on the HTML elements._
